@@ -3,19 +3,16 @@ public class ContaTerminal {
     public static void main(String[] args) throws Exception {
         Scanner scanner = new Scanner(System.in);
 
+        System.out.println("Digite o número da conta: ");
+        int numeroConta = scanner.nextInt();
+        scanner.nextLine();
 
 
-        System.out.println("Digite o número da conta: ");
-        Integer numeroConta = scanner.nextInt();
-
-
-        Scanner nomeCliente = new Scanner(System.in);
         System.out.println("Digite o seu nome: ");
-        String nome = nomeCliente.nextLine();
+        String nome = scanner.nextLine();
 
-        Scanner agencia = new Scanner(System.in);
-        System.out.println("Digite a agencia: ");
-        String agenciaConta = agencia.nextLine();
+        System.out.println("Digite a agência: ");
+        String agenciaConta = scanner.nextLine();
 
         float saldo = 1000000f;
 
